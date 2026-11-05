@@ -1,16 +1,64 @@
-# React + Vite
+# Todo List Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend de una aplicación de tareas. Permite crear una cuenta, iniciar sesión y administrar tareas mediante una API REST.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Registro e inicio de sesión.
+- Listado de tareas del usuario autenticado.
+- Creación, actualización y eliminación de tareas.
+- Las peticiones protegidas incluyen un token JWT.
 
-## React Compiler
+## Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- Fetch API
 
-## Expanding the ESLint configuration
+## Proyecto relacionado
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El backend Express y PostgreSQL está en [todo API](https://github.com/renatoapc/todo-list-backend-practica).
+
+## Requisitos
+
+- Node.js y npm.
+- El backend y PostgreSQL configurados y ejecutándose. Consulta el README del repositorio del backend.
+
+## Ejecutar localmente
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/renatoapc/todo-list-frontend-practica.git
+   ```
+
+2. Entra a la carpeta e instala las dependencias:
+
+   ```bash
+   cd todo-list-frontend-practica
+   npm install
+   ```
+
+3. Crea un archivo `.env.local` en la raíz del proyecto y agrega la URL local del backend:
+
+   ```env
+   VITE_API_URL=http://localhost:5000
+   ```
+
+4. Inicia el frontend:
+
+   ```bash
+   npm run dev
+   ```
+
+Mantén el backend ejecutándose mientras usas la aplicación. Vite mostrará en la terminal la dirección local del frontend.
+
+`VITE_API_URL` es configuración pública del frontend; no agregues contraseñas ni claves privadas a variables con prefijo `VITE_`.
+
+## Comprobaciones
+
+```bash
+npm run lint
+npm run build
+```
