@@ -59,6 +59,7 @@ Mantén el backend ejecutándose mientras usas la aplicación. Vite mostrará en
 ## Comprobaciones
 
 ```bash
+npm test
 npm run lint
 npm run build
 ```
