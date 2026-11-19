@@ -2,6 +2,12 @@
 
 Frontend de una aplicación de tareas. Permite crear una cuenta, iniciar sesión y administrar tareas mediante una API REST.
 
+## Demo
+- Aplicación: [Para abrir Todo App](https://todo-list-frontend-practica.vercel.app/)
+- API: [Para verificar el estado](https://todo-list-backend-practica.onrender.com/health)
+
+ La aplicación usa una API Express alojada en Render y una base de datos PostgreSQL alojada en Neon.
+
 ## Funcionalidades
 
 - Registro e inicio de sesión.
@@ -22,8 +28,9 @@ El backend Express y PostgreSQL está en [todo API](https://github.com/renatoapc
 
 ## Requisitos
 
-- Node.js y npm.
-- El backend y PostgreSQL configurados y ejecutándose. Consulta el README del repositorio del backend.
+Para probar la demo publicada, solo necesitas un navegador.
+
+Para ejecutar el frontend localmente, necesitas Node.js y npm, además del backend ejecutándose. Consulta el README del backend para configurarlo.
 
 ## Ejecutar localmente
 
